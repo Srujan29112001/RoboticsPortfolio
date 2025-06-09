@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale-1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3579510e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!img src="Images/Roboticslogo1.png" class="logo">
+            <img src="Images/Bestlogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#My Bin">Bin</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <p class="mut">~Building Adaptive Robots at the Edge of Innovation~</p>
+        </div>
+    </div>
+</div>
+<!----------------------------------------ABOUT--------------------------------------- -->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Robotskills.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Skills</h1>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Robotics & Control Systems </span><br>
+                        <h3>Control Techniques</h3>
+                            <h1>Model Predictive Control (MPC), PID, LQR, State-Space Control, Kalman & Extended Kalman Filters</h1>
+                        <h1>.</h1>
+                        <h3>Navigation & Planning</h3>
+                            <h1>Autonomous Navigation, Lane Changing Algorithms, Obstacle Avoidance</h1>
+                        <h1>.</h1>
+                        <h3>Hardware Integration</h3>
+                            <h1>Pixhawk Flight Controller, Arduino (UNO, Duemilanove), Sensor Fusion Modules</h1>
+                        <h1>.</h1>
+                        <h3>Trajectory & Motion Optimization</h3>
+                            <h1>Trajectory Planning, Feedback Linearization, Optimal Control</h1>
+                        <h1>.</h1>
+                        <h3>Kinematics & Dynamics</h3>
+                            <h1>Forward/Inverse Kinematics, Robot Dynamics, Lagrangian Modeling</h1>
+                        <h1>.</h1>
+                        <h3>Simulation & Design</h3>
+                            <h1>MATLAB & Simulink-based modeling and tuning of dynamic systems</h1></li>
+
+                        <li class="hidden-skill"><span>Computer Vision & Deep Learning</span><br>
+                        <h3>Object Detection & Tracking</h3>
+                            <h1>YOLOv7, YOLOv8, Real-time vision systems</h1>
+                        <h1>.</h1>
+                        <h3>Depth & Pose Estimation</h3>
+                            <h1>MiDaS for monocular depth, Mediapipe for pose/gesture/lip tracking</h1>
+                        <h1>.</h1>
+                        <h3>3D Object Recognition</h3>
+                            <h1>PointNet for point cloud classification and segmentation</h1>
+                        <h1>.</h1>
+                        <h3>Sequence Modeling</h3>
+                            <h1>LipNet for video-based lip reading and temporal feature extraction</h1>
+                        <h1>.</h1>
+                        <h3>Frameworks</h3>
+                            <h1>TensorFlow, Keras, OpenCV, Hugging Face Transformers</h1>
+                        <h1>.</h1>
+                        <h3>Edge Deployment</h3>
+                            <h1>Optimized models for Jetson Nano and Jetson Xavier platforms</h1></li>
+
+                        <li class="hidden-skill"><span>3D Perception & Spatial Computing</span><br>
+                        <h3>Reconstruction & Mapping</h3>
+                            <h1>2D-to-3D Conversion, Mesh Reconstruction, Open3D</h1>
+                        <h1>.</h1>
+                        <h3>Point Cloud Processing</h3>
+                            <h1>Generation, Filtering, and Visualization of LiDAR/Depth data</h1>
+                        <h1>.</h1>
+                        <h3>Spatial Analytics</h3>
+                            <h1>Real-Time 3D Mapping, Face Mesh, and Pose Estimation using vision systems</h1></li>
+
+                        <li class="hidden-skill"><span>Reinforcement Learning</span><br>
+                        <h3>Core Algorithms</h3>
+                            <h1>Q-Learning, Markov Decision Processes (MDPs), Policy Gradient Methods</h1>
+                        <h1>.</h1>
+                        <h3>Environment Modeling</h3>
+                            <h1>State-Action Mapping, Reward Structuring, and Optimization</h1></li>
+
+                        <li class="hidden-skill"><span>Embedded Systems & Edge Computing</span><br>
+                        <h3>Microcontroller Programming</h3>
+                            <h1>Arduino (UNO, Duemilanove), Real-time sensor interfacing</h1>
+                        <h1>.</h1>
+                        <h3>NVIDIA Jetson Ecosystem</h3>
+                            <h1>Real-time inference using CUDA on Jetson Nano & Xavier AGX</h1>
+                        <h1>.</h1>
+                        <h3>ROS 2 & Omniverse</h3>
+                            <h1>Robotics middleware, Omniverse extension development</h1></li>
+
+                        <li class="hidden-skill"><span>Signal & Neural Data Processing</span><br>
+                        <h3>Time-Frequency Analysis</h3>
+                            <h1>Wavelet Transforms (Morlet), Time-Frequency Decomposition, FFT, Hilbert Transform</h1>
+                        <h1>.</h1>
+                        <h3>Neural Signal Features</h3>
+                            <h1>Inter-Site Phase Clustering (ISPC), Phase Lag Index (PLI)</h1>
+                        <h1>.</h1>
+                        <h3>EEG Simulation & Analysis</h3>
+                            <h1>Signal Modeling, Bandpass Filtering, Artifact Removal</h1>
+                        <h1>.</h1>
+                        <h3>Frequency-Domain Filtering</h3>
+                            <h1>High/Low-Pass Filtering, Spectral Analysis</h1></li>
+                        
+                        <li class="hidden-skill"><span>Audio & Speech Processing</span><br>
+                        <h3>Feature Extraction</h3>
+                            <h1>MFCCs, Spectrograms, Temporal-Spatial Feature Learning</h1>
+                        <h1>.</h1>
+                        <h3>Classification Tasks</h3>
+                            <h1>UrbanSound8K Audio Classification, Spoken Word Recognition</h1>
+                        <h1>.</h1>
+                        <h3>Video-Audio Fusion</h3>
+                            <h1>Lip Reading via CNN-RNN hybrid models on video sequences</h1></li>
+
+                        <li class="hidden-skill"><span>Software Development</span><br>
+                        <h3>Programming Languages</h3>
+                            <h1>Python, C++, MATLAB, Verilog HDL</h1>
+                        <h1>.</h1>
+                        <h3>Web & UI Development</h3>
+                            <h1>React.js for frontend, TensorFlow.js for browser-based inference</h1>
+                        <h1>.</h1>
+                        <h3>Automation & Scripting</h3>
+                            <h1>PyAutoGUI for GUI control, Python automation pipelines</h1>
+                        <h1>.</h1>
+                        <h3>Version Control</h3>
+                            <h1>Git for versioning, GitHub for collaboration and CI/CD</h1></li>
+
+                        <li class="hidden-skill"><span>Tools, IDEs & Deployment Platforms</span><br>
+                        <h3>IDEs & Dev Environments</h3>
+                            <h1>Jupyter Lab, VS Code, PyCharm, MATLAB, Google Colab</h1>
+                        <h1>.</h1>
+                        <h3>Version Control & Collaboration</h3>
+                            <h1>Git, GitHub, GitHub Actions, Markdown Documentation</h1>
+                        <h1>.</h1>
+                        <h3>Containerization & Deployment</h3>
+                            <h1>Docker, TensorFlow Lite, ONNX Runtime, Gradio Interface Hosting</h1>
+                        <h1>.</h1>
+                        <h3>Simulation & Visualization</h3>
+                            <h1>Real-Time Animations, Matplotlib, Open3D, COVID-19 Spread Simulations, EEG Signal Visualization</h1>
+                        <h1>.</h1>
+                        <h3>Cloud & Robotics Tools</h3>
+                            <h1>NVIDIA Omniverse, NVIDIA Jetson Ecosystem, Git-based CI/CD, Python Automation, Intro to Cloud Platforms (AWS, GCP)</h1></li>
+
+                        <li class="hidden-skill"><span>Soft Skills</span><br>
+                        <h3>Analytical Thinking & Problem Solving</h3>
+                            <h1>Demonstrated through physics-based simulations, ML pipelines, and embedded control systems</h1>
+                        <h1>.</h1>
+                        <h3>Team Collaboration & Communication</h3>
+                            <h1>Proven via collaborative internships, GitHub repos, and contributions to open-source tools</h1>
+                        <h1>.</h1>
+                        <h3>Documentation & Technical Writing</h3>
+                            <h1>Maintained wikis, Jupyter notebooks, and project blogs; emphasized reproducibility</h1>
+                        <h1>.</h1>
+                        <h3>Adaptability & Rapid Learning</h3>
+                            <h1>Gained experience in 25+ project domains: GANs, SLAM, LiFi, RL, 3D Vision, and more</h1>
+                        <h1>.</h1>
+                        <h3>Research Mindset & Scientific Curiosity</h3>
+                            <h1>Designed solvers for chaotic systems, EEG signal decoding, and scientific model validation</h1>
+                        <h1>.</h1>
+                        <h3>Ethical Robotics & Safety-Aware Design</h3>
+                            <h1>Bias-sensitive ML model development, fail-safe robotics logic, and transparent benchmarking</h1></li>
+                    </ul>
+                    <button id="seeMoreBtn" class="btn">See More </button>
+                    <button id="minimizeBtn" class="btn hidden">Minimize </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------Projects------------------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="Projects-list">
+            <div class="project visible primary-project">
+                <i class="fa-solid fa-copyright"></i>
+                <h2>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h2>
+                <h3>Description:</h3>
+                <p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration.</p>
+                <p>My system employs cutting-edge neuromorphic hardware design, EEG-based brain-computer interfaces, computer vision, multi-agent AI coordination, and robotic companions to create the world's first comprehensive mental health support system for high-stress financial decision-making.</p>
+                <a href="#">Learn More (Comming Soon)</a>
+                <p> </p>
+                <a href="#">View (Comming Soon)</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-helicopter"></i>
+                <h2>Internship Semester (UG Final Semester) Project</h2>
+                <h3>Problem Statement:</h3>
+                <p>Aerial vehicles struggle with real-time, low-latency object detection due to small object sizes, computational constraints, and dynamic environments. This project addresses the gap by deploying an edge-optimized YOLOv7 model to enable accurate, real-time detection on drones without cloud dependency.</p>
+                <h3>Summary:</h3>
+                <p>Developed a real-time aerial object detection system using YOLOv7, trained on a custom dataset with NVIDIA Jetson AGX Xavier. Deployed on the "Tunga" aerial vehicle (NVIDIA Jetson Nano + Pixhawk) to enable edge-computing for dynamic environments. Achieved 89% mAP, 22 FPS inference speed, and 95% real-world detection accuracy, optimizing resource usage by 40% compared to baseline models. Demonstrated scalability for aerial surveillance and disaster response applications.</p>
+                <a href="https://drive.google.com/drive/folders/1M_hsP4ME88xmN1Oz7PHSEsQ62SkkizNB?usp=sharing">Learn More</a>
+            </div>
+            
+            <div class="project visible">
+                <i class="fa-solid fa-clock"></i>
+                <h2>Time-Frequency Analysis of Neural Signals Using Complex Morlet Wavelets</h2>
+                <h3>Problem Statement:</h3>
+                <p>EEG signal analysis faces challenges in balancing temporal and spectral resolution while mitigating edge artifacts. This project addressed these limitations by implementing complex Morlet wavelets to enable high-precision time-frequency decomposition and comparing it with traditional filter-Hilbert methods for robust neural oscillation characterization.</p>
+                <h3>Summary:</h3>
+                <p>This project leveraged complex Morlet wavelet convolution to analyze EEG data, extracting time-frequency power and phase dynamics from single and multi-trial neural signals. Key tasks included comparing wavelet convolution with filter-Hilbert methods (achieving 25% higher spectral precision), quantifying edge artifacts in transient signals, and visualizing multi-channel spectral activity. Results revealed robust inter-trial phase coherence (ITPC > 0.4) in high-frequency bands and identified boundary artifacts in non-stationary data. The study demonstrated wavelet convolution’s superiority in resolving frequency-specific neural oscillations, offering insights for improved EEG signal processing in cognitive and clinical neuroscience applications.</p>
+                <a href="https://drive.google.com/file/d/174WFLUAsCsRvJn0yrFD4Ug1JxBK4-rUd/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/10AdoVKTc1SNIIjdsGTemVcC9ohpVOiEC/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-brands fa-slack"></i>
+                <h2>Phase Synchronization Analysis using EEG Data</h2>
+                <p>This project involves the analysis of phase synchronization between EEG signals from different channels. Using Matlab, we compute and visualize the phase synchronization using techniques like Morlet wavelet transform, ISPC, and PLI. The project includes loading EEG data, setting up connectivity parameters, computing analytic signals, and visualizing phase angles in various plots. Additionally, we compare voltage and Laplacian data to evaluate the impact of these different preprocessing methods on phase synchronization metrics.</p>
+                <a href="https://drive.google.com/file/d/1ij23QD0AeQ-zL_pBJZtAydPK69dc0DBV/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/11mkQBTWKCoTjy2iuQPSDM8wPFryCgZWz/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-rainbow"></i>
+                <h2>Neural Signal Spectral Analysis</h2>
+                <p>This project involves generating sine waves and analyzing their spectral properties using FFT. It includes adding noise to the signals and examining its impact on frequency reconstruction. The power spectrum of real neural data is computed and compared using different averaging methods. Additionally, a manual implementation of the Fourier Transform is created to validate the FFT results. The project also explores zero-padding to improve frequency resolution and applies frequency-domain filtering to remove 50 Hz line noise.</p>
+                <a href="https://drive.google.com/file/d/1z8naadsLcCtv7WQhO-Fi-9AmbdZTDXyB/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/15RIx7UBf5djT8ao-p5j3E801gC6QxmME/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-brain"></i>
+                <h2>Simulating EEG Data in MATLAB</h2>
+                <p>This project involves simulating EEG data at the dipole level using MATLAB. The simulation includes generating pure sine wave signals, adding noise, and creating non-oscillatory and non-stationary signals in dipoles. The EEG data is then projected onto scalp electrodes to visualize and analyze the resulting signals. The project aims to understand the relationship between dipole-level signals and scalp-level EEG responses.</p>
+                <a href="https://drive.google.com/file/d/15hahC4mAdGdYJrxKGk0d7RYtKUDEHuqX/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1ao3f6vngg0dvMw68IndIM0_Ymtr8U5AW/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-road"></i>
+                <h2>Comparative Analysis of Pathfinding Algorithms (A* ,BFS & DFS)</h2>
+                <h3>Problem Statement:</h3>
+                <p>Existing pathfinding algorithms vary in efficiency and optimality for maze navigation. This project compares DFS, BFS, and A* to determine their effectiveness in minimizing path length, search time, and heuristic impact on performance.</p>
+                <h3>Summary:</h3>
+                <p>This project implements and evaluates DFS, BFS, and A* algorithms in maze navigation using PyAmaze to visualize pathfinding and measure efficiency. Results show BFS guarantees the shortest path, while A* (with Manhattan heuristic) reduces search time by 25–40% compared to DFS. The Manhattan heuristic outperformed Euclidean in 70% of test cases, achieving shorter search paths. Metrics include path length (BFS/A: 100% optimal vs. DFS: 60% longer paths) and search efficiency (A explored 35% fewer nodes than BFS). The study highlights trade-offs between completeness, speed, and heuristic choice for real-world navigation systems.</p>
+                <a href="https://drive.google.com/file/d/1V33fNyhUL6bOX_erMyT3IVVBtzlt7G7G/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1itf6XJKZYSxQQ3GsemLFQl5rt42SJ_v-/view?usp=sharing">View</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Autonomous Lane Changing Control System (Lateral Dynamics Simulation)</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional autonomous lane-changing systems struggle to balance dynamic constraints and real-time adaptability. This project addresses the challenge of designing a computationally efficient control framework using MPC to ensure safe, smooth lateral maneuvers while tracking time-varying trajectories under hardware limitations.</p>
+                <h3>Summary:</h3>
+                <p>This MATLAB project designs a Model Predictive Control (MPC) system for autonomous vehicles to execute precise lane-changing maneuvers. The MPC algorithm dynamically optimizes steering inputs over a receding horizon to track a reference trajectory, balancing computational efficiency and control accuracy. The simulation framework includes trajectory generation, state-space modeling, and iterative quadratic optimization (quadprog) to resolve constraints. Results demonstrate >95% trajectory tracking accuracy, steering angles within ±0.35 rad limits, and stable lateral deviation (less than 0.15m) under varying conditions. Visualization of states (yaw rate, position) and inputs validates the controller’s robustness for real-time applications, with adaptive horizon tuning reducing solve times by 20%. The project highlights MPC’s capability to handle nonlinear vehicle dynamics while ensuring safety-critical performance.</p>
+                <a href="https://drive.google.com/file/d/1UpTz5aM6FuVQGSlm-IpGNkot20IL5oMk/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1J8XQ-JZwxC9K85M9zDJRZYnuMkKlu6ys/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-water"></i>
+                <h2>Simulating Water Tank Dynamics </h2>
+                <p>This project simulates the dynamics of water volume changes in three interconnected tanks with different reference volumes and control parameters. The simulation employs proportional control to adjust the volume of each tank. The volume changes over time are visualized using animated plots to provide a clear understanding of how each tank's volume evolves and responds to different control inputs.</p>
+                <a href="https://drive.google.com/file/d/1_yZ7eAZA3JJui7N2-CiouHYKhSP3LTTk/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1V3HSZidzz9OtidbneRJhlawvIX9xmXiO/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-train"></i>
+                <h2>PID Control Simulation for Falling Cube </h2>
+                <p>This project involves simulating a PID-controlled train on an inclined rail trying to catch a falling cube. The simulation calculates the train's displacement, velocity, acceleration, and PID controller's error metrics (horizontal error, rate of change of error, and integral of error) over time. An animation is generated to visualize the train and cube movements, and performance metrics are plotted to assess the PID controller's effectiveness.</p>
+                <a href="https://drive.google.com/file/d/1yslDuNLlcBn7WclAAp0edZnZU4FjKRR8/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1av_EO3pLEez9lWdsrHoUO_BzyWDeeYYk/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-virus"></i>
+                <h2>COVID-19 Spread Simulation and Visualization</h2>
+                <p>This project simulates the spread of COVID-19 using Python libraries such as Matplotlib and NumPy. The simulation models the infection rate (R0), recovery time, and fatality rate to visualize the progression of the pandemic. The simulation displays the spread of the virus over time, with infected, recovered, and deceased individuals represented on a polar plot. The animation dynamically updates the status of the population, providing a clear depiction of how the virus spreads and the outcomes over time.</p>
+                <a href="https://drive.google.com/file/d/1jkcdypjfS_V1_B_5ve2nBgytGCiawe0U/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1tCXmz6fvERzUJirARFN_-3lsFWgDx530/view?usp=sharing">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-gauge"></i>
+                <h2>Speed Estimation and Vehicle Tracking System</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional traffic monitoring systems lack accuracy in real-time speed estimation and struggle with occlusions in dense traffic. This project addresses these gaps by automating vehicle detection, tracking, and speed calculation using YOLOv8 and computer vision to enable efficient, scalable traffic analysis.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages YOLOv8's state-of-the-art object detection to identify and track vehicles in real-time video streams. A custom tracking algorithm assigns persistent IDs to vehicles, enabling precise speed calculation as they cross two predefined lines. The system achieved 85%+ detection accuracy, tracked 100+ vehicles simultaneously, and computed speeds with less than 10% error relative to ground truth. Results were visualized using OpenCV, displaying bounding boxes, dynamic speed labels (in km/h), and traffic metrics (e.g., 45 vehicles moving downward vs. 32 upward). Designed for scalable traffic analysis, this solution demonstrates robust performance in real-world scenarios, offering insights for urban planning and congestion management.</p>
+                <a href="https://drive.google.com/file/d/1UqPIOl2oD8quSNWniIEDeH8kXOGdK_BF/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/17JO_k02YTMQoumhm95J3EA6V3N7fUMIE/view?usp=drive_link">View</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-arrows-to-eye"></i>
+                <h2>Real-Time Depth Estimation with MiDaS</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional depth sensing relies on specialized hardware (e.g., LiDAR, stereo cameras), which is costly and computationally intensive. This project addresses this gap by implementing a real-time, GPU-accelerated monocular depth estimation system using lightweight MiDaS models to democratize 3D perception from standard 2D webcams.</p>
+                <h3>Summary:</h3>
+                <p>This project implements a real-time monocular depth estimation system using PyTorch and MiDaS models (DPT_Large, DPT_Hybrid, MiDaS_small) to infer 3D structure from 2D webcam input. Leveraging GPU acceleration (NVIDIA RTX 3060), it processes 20–30 FPS with optimized latency, balancing accuracy and speed: DPT_Large achieved ±5% relative depth error but slower inference (~15 FPS), while MiDaS_small prioritized speed (~30 FPS) for real-time applications. The pipeline integrates OpenCV for live video capture, PyTorch for model inference, and color-mapped depth visualization, demonstrating a hardware-efficient alternative to traditional depth sensors like LiDAR.</p>
+                <a href="https://drive.google.com/file/d/1for27_u2Bv3fheU_Av9ljfehQFm_cS03/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/17FdFmYfIyzBCxLE3S3qUmYa851rBLtkf/view?usp=drive_link">View</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-camera"></i>
+                <h2>Lip Read To Text </h2>
+                <h3>Problem Statement:</h3>
+                <p>Existing visual speech recognition systems struggle to accurately transcribe spoken words from lip movements due to variable lighting, speaker differences, and lack of temporal alignment. This project addresses these challenges by developing a deep learning model (3D CNN + Bidirectional LSTM) to automate silent speech interpretation with robust spatiotemporal feature extraction and CTC-based alignment-free training.</p>
+                <h3>Summary:</h3>
+                <p>This project develops a LipNet-based lip reading model using TensorFlow/Keras, integrating 3D CNNs and Bidirectional LSTMs to analyze spatiotemporal lip movements. The system achieves 18% word error rate (WER) on test data, trained with CTC loss for alignment-free text prediction. Preprocessing includes frame normalization and lip ROI extraction, while evaluation shows 83% accuracy on short phrases. Future enhancements target larger datasets and transformer-based architectures for improved robustness.</p>
+                <a href="https://drive.google.com/file/d/1hlZQTdIb1GzAGZbhJ9XJHZWV2KXZJgs8/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1ps7LjiKgnh4-PDLa24N6IDAv0J81clgl/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-cube"></i>
+                <h2>2D Image To 3D Point Cloud</h2>
+                <p>This project involves using a depth estimation model from the Hugging Face Transformers library to predict depth from a 2D image. The depth map is then used to create a point cloud, which is processed and refined to reconstruct a 3D mesh. The project employs Open3D for point cloud and 3D mesh processing and visualization.</p>
+                <a href="https://drive.google.com/file/d/1RBcmLM5-aizNkmyKtjJXM6qsc24FI_8f/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1qeGzIMvqmcuScaa15FPmolMsjsgynWNw/view?usp=sharing">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-brands fa-unity"></i>
+                <h2>Point Net Classification</h2>
+                <p>This project involves creating a 3D shape classification system using TensorFlow and the PointNet architecture. The ModelNet10 dataset is used, consisting of 3D object files in the .off format. The project includes data preprocessing, model building, training, evaluation, and visualization of the classification results.</p>
+                <a href="https://drive.google.com/file/d/1E_nkeD5kHpWI5VSPh295BF7qWroe7xem/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1KqVAM8r2UCOewm-tRPP79fMXtdxDOEwN/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-hand-pointer"></i>
+                <h2>Real Time Hand Gesture Recognition For Cursor Control</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional input devices limit mobility and accessibility. This project addresses this by designing a vision-based system to control cursor movements and clicks through hand gestures, eliminating physical hardware dependency.</p>
+                <h3>Summary:</h3>
+                <p>Developed a real-time hand gesture recognition system using MediaPipe and PyAutoGUI to enable touchless cursor control. The solution processes webcam input to detect 21 hand landmarks, achieving 95% gesture accuracy, maps finger movements to screen coordinates with less than 50ms latency, and triggers mouse clicks via pinch detection (index-thumb distance <20px). Tested at 30 FPS, it offers intuitive, low-latency hands-free navigation for enhanced accessibility.</p>
+                <a href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/18pD_FxZSHZktE_LkAHHy81ZuJzJsY4p7/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-hands-holding"></i>
+                <h2>Real Time Pushup Counter (Front And Side View)</h2>
+                <p>The project involves two main scripts, one for counting push-ups from a front view and another for evaluating form from a side view. Both scripts use Mediapipe and OpenCV libraries to process video feeds from a webcam. The front view script calculates angles between key joints to count push-ups, while the side view script assesses form and provides feedback.</p>
+                <a href="https://drive.google.com/file/d/18b6hAaXp1-jj_1U3LE4aCUfV3RhNeUMm/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/drive/folders/1j7Mjrrfl58mmTMIRsovimnJ03YlmLwhY?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>Real Time Bicep Curl Counter</h2>
+                <p>The project involves using the Mediapipe library for pose estimation to analyze video feed from a webcam. By extracting key landmarks from the user's arm, the system calculates the angle at the elbow to detect the curl movement. The code then counts the number of curls and displays this information along with the stage of the exercise on the video feed.</p>
+                <a href="https://drive.google.com/file/d/1oskl1rXnQWrQNV7hevUIAbJ3IsAAEz5A/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/11nl8SfuZNa0gtGdKAI_NX9LopomP_yfT/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <h2>Real Time Hand Gesture Recognition For Volume Control</h2>
+                <p>This project utilizes a webcam to capture real-time hand movements and processes the video feed to detect hand landmarks. By measuring the distance between the tip of the thumb and the index finger, the system determines whether to increase or decrease the system volume. The hand gestures are tracked using Mediapipe, and the volume control is managed through PyAutoGUI.</p>
+                <a href="https://drive.google.com/file/d/1sk1imnbX8RNrsVSR9q87AOE1b66XwS3q/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1JeH80W7mR4F7Lvx95AlPjSRUXU551Rwg/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-person"></i>
+                <h2>Real Time Body Pose Estimation</h2>
+                <p>This project involves building a React application to perform real-time human pose estimation using the PoseNet model from TensorFlow.js. The application captures video from a webcam, processes each frame to detect human poses, and visualizes the detected keypoints and skeleton on a canvas overlay.</p>
+                <a href="https://drive.google.com/file/d/1zzvv007wIwFMBdtGSdUJGJMmeip6rMXB/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/11mXOkEz5jUiIt4XhiGGMih5z-wVZP725/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-person"></i>
+                <h2>Real Time Body Segmentation Estimation</h2>
+                <p>This project demonstrates real-time body segmentation using TensorFlow's BodyPix model within a React application. The application captures live video from a webcam, applies body part segmentation, and displays the segmented body parts on a canvas overlay. The code sets up the webcam and canvas, loads the BodyPix model, and processes video frames to draw masks of detected body parts.</p>
+                <a href="https://drive.google.com/file/d/1VO4cgljpMC8yJ7fEz8fmzcljD8hyJsvm/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1En8jLjLpjvj-2ivyq0Pn-o11sHnaJ9FU/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-hand"></i>
+                <h2>Real Time Hand Pose Estimation</h2>
+                <p>This project involves creating a React application that integrates TensorFlow.js to perform real-time hand pose detection using a webcam. The application captures video input from the webcam, processes the frames to detect hand landmarks, and renders these landmarks on a canvas. The handpose model from TensorFlow.js is used for detecting hand landmarks, and cuTm drawing utilities are employed to visualize the detected hand poses with distinct colors and sizes.</p>
+                <a href="https://drive.google.com/file/d/1A_sfzGiag-9r0wkninkuo4AIiGdyB3WQ/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1eki7QM9JTKEMZ-6iCoeQeGzTyyBdLnew/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Real Time 3D Face Mapping (436 Data Point)</h2>
+                <p>This project involves creating a React application that utilizes TensorFlow.js to perform real-time face mesh detection. The application captures video from a webcam and overlays a mesh on detected facial features. Two face mesh models from TensorFlow.js are compared: the older @tensorflow-models/facemesh and the newer @tensorflow-models/face-landmarks-detection. The app dynamically updates the face mesh on the canvas as the video feed changes.</p>
+                <a href="https://drive.google.com/file/d/1htuc-ohvXb4bJDc2Cq4FKaI1Msu0B1R1/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1NVGVJbTzU0MhG4fgBdv7bVD3NPuqxFDH/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-hands"></i>
+                <h2>Rock-Paper-Scissors Hand Gesture Classifier with FasterViT</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional CNN-based gesture classifiers struggle with balancing speed and accuracy for real-time applications. This project addresses this gap by implementing FasterViT, a vision transformer optimized for computational efficiency, to achieve sub-20ms inference times with >98% accuracy in dynamic hand gesture recognition.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages the FasterViT architecture to build a real-time hand gesture classifier for rock-paper-scissors games. The dataset was enhanced using advanced preprocessing (random resizing, cropping, normalization) and augmentation techniques to improve model generalization. The fine-tuned FasterViT model achieved 98.2% validation accuracy in just 5 training epochs, optimized via GPU acceleration and adaptive learning rates. The deployed model demonstrates rapid inference times (less than 15ms/image) on an RTX 3060 GPU, enabling seamless real-time predictions. Practical integration was validated by overlaying predictions on test images, showcasing robust performance across diverse lighting and gesture variations.</p>
+                <a href="https://drive.google.com/file/d/1oK2qijwqPXxs7Ouj1AgiSHY8u-6SkZ2K/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1bthm5ogWYgUVfjlpMgUkK1DlgV1dz90E/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-face-laugh-beam"></i>
+                <h2>Happy Or Sad Image Classifier </h2>
+                <p>This project involves preprocessing image data, creating a CNN model, training it on the data, and evaluating its performance. The model is designed to classify images into two categories. After training, the model's performance is assessed, and it is saved for future use.</p>
+                <a href="https://drive.google.com/file/d/1pttNmzVRI8iq0rxXllxRMTjPgWLf9hW-/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1_8_8PJrHWsArQF4q1NYTwgYCmY56tv1Q/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>ESRGAN (Super Resolution) </h2>
+                <p>This project involves running the ESRGAN model to enhance the resolution of images. ESRGAN is a state-of-the-art method in the field of image super-resolution, utilizing a deep learning-based approach to produce high-quality, high-resolution images from low-resolution inputs. The implementation is done using Python and PyTorch, with the model architecture and weights loaded from pre-trained models.</p>
+                <a href="https://drive.google.com/file/d/1hiYgZbDpwv2gk2T1bDi_MnIrpC-FWH5s/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/14BeY2Drf4DBNdAvrwNtJfKJopGRlKVtj/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Edge Detection </h2>
+                <p>The project involves loading an image, resizing it, converting it to grayscale, applying Gaussian blur, and finally using the Canny edge detection algorithm to identify edges. The results are visualized using Matplotlib, showing the original, resized, grayscale, blurred, and edge-detected images.</p>
+                <a href="https://drive.google.com/file/d/18CtcnnzbawYDwxxjaU_CKUfPy-r5CfAb/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1n5gaOAma6tT9bDV_5qw1ZuTOmAbVvSLo/view?usp=drive_link">View</a>
+            </div>
+            
+            <div class="project visible">
+                <i class="fa-solid fa-dice"></i>
+                <h2>Optimized Ludo with Q-Learning</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional rule-based Ludo AI lacks adaptability to dynamic game states and opponent strategies. This project addresses the need for an autonomous agent that learns optimal moves through trial and error, using Q-learning to balance short-term rewards and long-term winning strategies.</p>
+                <h3>Summary:</h3>
+                <p>This project implements a Q-learning-based AI agent to master the strategic board game Ludo. By defining a state-action space and iteratively updating a Q-table using rewards, the agent learns optimal moves through exploration (epsilon-greedy policy) and exploitation. The AI was trained over 10,000 simulated games using Python and Ludopy, achieving an 85% win rate against rule-based opponents and a 40% reduction in average move decision time. Key innovations include dynamic reward tuning for safe piece advancement and blocking adversaries. The modular design, powered by NumPy for efficient Q-table updates, enabled the agent to adapt to complex board states, demonstrating a 92% success rate in avoiding captures. Results validate reinforcement learning’s potential for dynamic strategy games.</p>
+                <a href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1pWOdf7ibGoySDqv3t-BuRXMVapnhgDbf/view?usp=sharing">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-volume-low"></i>
+                <h2>Deep Audio Classifier </h2>
+                <h3>Problem Statement:</h3>
+                <p>Urban sound recognition is challenging due to overlapping acoustic patterns and environmental noise. This project solves this by developing an MFCC-driven neural network to classify sounds accurately, enabling scalable noise monitoring and urban analytics.</p>
+                <h3>Summary:</h3>
+                <p>This project tackles urban sound classification using the UrbanSound8K dataset by extracting Mel-Frequency Cepstral Coefficients (MFCC) to train a neural network. The model achieved 85% test accuracy and was trained in under 1 hour, efficiently distinguishing 10 sound classes (e.g., drilling, sirens, street music) despite background noise. By combining dropout regularization and Adam optimization, the system demonstrates robust performance for real-world applications like noise pollution monitoring and smart city infrastructure.</p>
+                <a href="https://drive.google.com/file/d/1i_SvYd_FbdifHGsw9tb_lLQBHELGXd0K/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1oIB0Jqn38J84iPwhUxTVTIZBqH0AcxYL/view?usp=sharing">View</a>
+            </div>
+            
+            <div class="project visible">
+                <i class="fa-solid fa-house-signal"></i>
+                <h2>Engineering (UG) Group Project (Capstone Project)</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional RF-based wireless networks face spectrum congestion, security vulnerabilities, and interference issues. This project addresses these limitations by prototyping a LiFi system that leverages visible light for high-bandwidth, low-risk, and energy-efficient PC-to-PC communication.</p>
+                <h3>Summary:</h3>
+                <p>Designed and implemented a LiFi system enabling secure, high-speed data transmission between PCs using modulated LED light and photodetectors. Developed hardware (transceiver circuits) and software (encoding/decoding protocols), achieving a 15 Mbps data rate, less than 10⁻⁵ bit error rate, and 2-meter transmission range. Demonstrated LiFi’s viability as a low-latency, energy-efficient alternative to congested RF networks (WiFi), with potential applications in EMI-sensitive environments. Validated through real-time text/file transfers, offering a scalable foundation for future light-based communication systems.</p>
+                <a href="https://drive.google.com/file/d/1xaGgViC6ZqSG_RMIFcPvBzCTVtBHB8PN/view?usp=sharing">Learn More</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-dumpster"></i>
+                <h2>Smart Dustbin</h2>
+                <h3>Problem Statement:</h3>
+                <p>Manual dustbin lids pose hygiene risks due to frequent contact and often remain open, causing odor and spillage. This project addresses these issues by automating lid operation using sensors, ensuring touchless disposal and timely closure.</p>
+                <h3>Summary:</h3>
+                <p>Designed an Arduino UNO-based smart dustbin with an ultrasonic sensor to enable touchless, hygienic waste disposal. The system detects proximity (up to 50 cm) and opens automatically, reducing physical contact and spillage. Achieved 95% detection accuracy, 0.5-second response time, and 60% improvement in user convenience, validated through 100+ test cycles. Ideal for public spaces to promote cleanliness and operational efficiency.</p>
+                <a href="https://drive.google.com/file/d/1ehT-wkaiG5WnymMWv5EJKeNmiQ443o4j/view?usp=drive_link">Learn More</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-car"></i>
+                <h2>Autonomus Rover</h2>
+                <p>Autonoumus Moving Bot using Arduino Duemilanove and various sensors.</p>
+                <a href="https://drive.google.com/file/d/1ZUJqbZYCbFZPnwwuSnePN8xVNT9XDciW/view?usp=sharing">Learn More</a>
+            </div>
+        </div>
+        <a href="#" class="btn" id="projectsToggleBtn">See More</a>
+        <a href="#" class="btn hidden" id="minimizeBtn2">Minimize</a>
+    </div>
+</div>
+<!-------------------------------------------------My Certifications--------------------------------------->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work ">
+                <img src="Images/r.jpg">
+                <div class="layer">
+                    <h3>ROS 2</h3>
+                    <p>The Robot Operating System (ROS) is an open-source framework that helps researchers and developers build and reuse code between robotics applications.</p>
+                    <a href="https://drive.google.com/file/d/1qMpHzMRwd00XImP-0SGhBgyBbTyTSQir/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/ap.jpg">
+                <div class="layer">
+                    <h3>Applied Control Systems</h3>
+                    <p>This module will introduce the student to key topics within control and signal processing, developing understanding through a combination of theoretical content and practical application.</p>
+                    <a href="https://drive.google.com/file/d/1Rl-b4YfgV2Q9IN0BMGSRbABgLHHOHZQu/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/EEg.jpeg">
+                <div class="layer">
+                    <h3>Neural Signal Processing</h3>
+                    <p>Neural signals consist of recordings of potentials that are presumably generated by mixing some underlying components of brain activity.</p>
+                    <a href="https://drive.google.com/file/d/1AfFNSFMdELQJWvqBAYgNazY8PXDCuGY0/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/microcontroller.jpg">
+                <div class="layer">
+                    <h3>Mastering Microcontroller </h3>
+                    <p>Microcontroller is a compressed micro computer manufactured to control the functions of embedded systems in office machines, robots, home appliances, motor vehicles, and a number of other gadgets.</p>
+                    <a href="https://drive.google.com/file/d/1VYNqJWznrRNDrZUUzHzXfcfF79BuswIj/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/jetson-nano.png">
+                <div class="layer">
+                    <h3>Jetson Nano Boot Camp </h3>
+                    <p>The Jetson Nano module is a small AI computer that gives you the performance and power efficiency to take on modern AI workloads, run multiple neural networks in parallel, and process data from several high-resolution sensors simultaneously.</p>
+                    <a href="https://drive.google.com/file/d/10u7xdOQWPzZBzs0OLft8jLNL2nSeFS5P/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/cuda-cpp.png">
+                <div class="layer">
+                    <h3>CUDA Programming in C++</h3>
+                    <p>CUDA® is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs). With CUDA, developers are able to dramatically speed up computing applications by harnessing the power of GPUs.</p>
+                    <a href="https://drive.google.com/file/d/1OZJ_xwMQDzbhgVB-oETKNWM2U6gq5CDK/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work---2.png">
+                <div class="layer">
+                    <h3>VLSI SoC Design using Verilog HDL</h3>
+                    <p>
+                        VLSI design involves creating integrated circuits by combining thousands to billions of transistors on a single chip, enabling the development of complex electronic systems.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1vBZjzzJuvGVkUe2FvJgRRSfF8SP1rULl/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/7.png">
+                <div class="layer">
+                    <h3>AI</h3>
+                    <p>Artificial Intelligence (AI), the ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings.</p>
+                    <a href="https://drive.google.com/file/d/17dc_cd4Hvm1ACTfkU0VzbM-9IHBhmd2k/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/computer vision.jpg">
+                <div class="layer">
+                    <h3>Modern Computer Vision</h3>
+                    <p>
+                        Computer vision is a field of computer science that focuses on enabling computers to identify and understand objects and people in images and videos. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1_SpAOTD2mU9YNKFiGtkKIF6YdgGs-YZj/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Satellite.png">
+                <div class="layer">
+                    <h3>Disaster Risk Monitoring using Satellite Imagery (NVIDIA)</h3>
+                    <p>
+                        One remarkable instance of satellite imagery in disaster management was during the 2011 Japan earthquake and tsunami. Satellite data helped assess the extent of the damage, guiding rescue efforts and aid distribution. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1vWMNqgwWaA6SYa1Je1Y_IwbufqJYTMCM/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/python.jpg">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+                    <a href="https://drive.google.com/file/d/1oV5Wvv7CxR7fs9VV0nSCZqLSoxXO7Snt/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/cloud .png">
+                <div class="layer">
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.</p>
+                    <a href="https://drive.google.com/file/d/1Q3aX09mKlwJWN60l34-s1L7ZRGxbmUDw/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Flight Dynamics.png">
+                <div class="layer">
+                    <h3>Flight Dynamics with Tensors</h3>
+                    <p>
+                        Flight dynamics is shifting from vectors to tensors in order to adapt to the ever-increasing computer power available for solving complex aerospace problems. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1FTJXOi0ikE2HcUeVzDiW2m1dgrNprRqc/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/DJI.png">
+                <div class="layer">
+                    <h3>Model, Simulate and Control a Drone in MATLAB & SIMULINK</h3>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1B2oHuKczk4xWSeD2Ptd7P1uhJuASIjh9/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/propeller.jpeg">
+                <div class="layer">
+                    <h3>Design and Simulate the Aerodynamics of Propellers in MATLAB</h3>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1ecvQk09tNclDVsOTHQ3tHWiOBevGn62F/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/Omniverse.jpg">
+                <div class="layer">
+                    <h3>Develop ,Customize ,and Publish in Omniverse with Extensions</h3>
+                    <p>NVIDIA Omniverse is a scalable, multi-GPU real-time development platform for building and operating metaverse apps.</p>
+                    <a href="https://drive.google.com/file/d/1ZOKLaLpfdsCqG2ofdKa6VeLeNFL4s4my/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!---------------------------------------My Bin----------------------------------->
+<div id="My Bin">
+    <div class="container">
+        <h1 class="sub-title">My Bin</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work ">
+                <img src="Images/bin.png">
+                <div class="layer">
+                    <h3>My learning through Research </h3>
+                    <p>Research from Youtube, Internet Articles and Research papers.</p>
+                    <a href="https://drive.google.com/drive/folders/1VX17hprTORPRUBvXfWzZXUnE86PHKx-8?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!----------------------------------------Contact Me------------------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ksrujan_be19@thapar.edu</p>
+                <p><i class="fa-solid fa-paper-plane"></i>kt.srujan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9100725768</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/srujan.hardik/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/srujan29_?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k-srujan2                    "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srujan29112001?tab=overview&from=2023-11-01&to=2023-11-30"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/CV_Srujan_Robotics Engineer.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var siemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        siemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        siemenu.style.right = "-200px";
+    }
+</script>
+<script>
+document.getElementById('toggleBtn').addEventListener('click', function (event) {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all hidden certifications
+    var hiddenCertifications = document.querySelectorAll('.work.hidden');
+
+    // Toggle the 'hidden' class to show/hide certifications
+    hiddenCertifications.forEach(function (certification)
+    {
+        certification.classList.toggle('hidden');
+    });
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+
+document.getElementById('minimizeBtn').addEventListener('click', function (event) \
+{
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all certifications
+    var allCertifications = document.querySelectorAll('.work');
+
+    // Hide additional certifications beyond the first 3
+    for (var i = 3; i < allCertifications.length; i++) 
+    {
+        allCertifications[i].classList.add('hidden');
+    }
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+</script>
+<script>
+    const initiallyHiddenProjects = document.querySelectorAll('.project.hidden');
+
+document.getElementById('projectsToggleBtn').addEventListener('click', function (event) {
+    event.preventDefault();
+    // Show all hidden projects
+    initiallyHiddenProjects.forEach(project => {
+        project.classList.remove('hidden');
+    });
+    // Toggle button visibility
+    this.classList.add('hidden');
+    document.getElementById('minimizeBtn2').classList.remove('hidden');
+});
+
+document.getElementById('minimizeBtn2').addEventListener('click', function (event) {
+    event.preventDefault();
+    // Hide all initially hidden projects
+    initiallyHiddenProjects.forEach(project => {
+        project.classList.add('hidden');
+    });
+    // Toggle button visibility
+    document.getElementById('projectsToggleBtn').classList.remove('hidden');
+    this.classList.add('hidden');
+});
+</script>
+<script>
+    // See More Skills functionality
+    document.getElementById('seeMoreBtn').addEventListener('click', function() {
+    const hiddenSkills = document.querySelectorAll('.hidden-skill');
+    hiddenSkills.forEach(skill => {
+        skill.style.display = 'block';
+    });
+    this.classList.add('hidden');
+    document.getElementById('minimizeBtn').classList.remove('hidden');
+});
+    document.getElementById('minimizeBtn').addEventListener('click', function() {
+    const hiddenSkills = document.querySelectorAll('.hidden-skill');
+    hiddenSkills.forEach(skill => {
+        skill.style.display = 'none';
+    });
+    this.classList.add('hidden');
+    document.getElementById('seeMoreBtn').classList.remove('hidden');
+});
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMgAePb3b356XxG91zyNuVrGwzybWb_1_e0pt5yvTpxvADkznhn005EPiFC0nFRKvO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
